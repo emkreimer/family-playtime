@@ -1,8 +1,7 @@
-import {Home} from './components/index-page/Home';
-
+import Adedonha from "./pages/Adedonha";
 function App() {
   return (
-    <Home/>
+    <Adedonha/>
   )
 }
 
