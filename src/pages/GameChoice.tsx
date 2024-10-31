@@ -11,7 +11,7 @@ const GameChoice: React.FC = () => {
         {
             title: 'Quem sou eu?',
             icon: 'help',
-            onClick: () => console.log('qwuemm')
+            path: '/quem-sou-eu'
         },
         {
             title: 'Jogo da Velha',
