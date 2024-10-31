@@ -57,6 +57,7 @@ function LetterPicker() {
         innerBorderWidth={0}
         radiusLineWidth={1}
         textDistance={80}
+        spinDuration={0.4}
         onStopSpinning={() => {
           setMustSpin(false);
         }}

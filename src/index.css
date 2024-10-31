@@ -2,68 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/* src/LetterPickerWheel.css */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 
-.wheel-container {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    cursor: pointer;
-  }
-  
-  .wheel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transition: transform 2s ease-out;
-  }
-  
-  .wheel.spinning {
-    animation: spin 2s cubic-bezier(0.33, 1, 0.68, 1) infinite;
-  }
-  
-  .wheel-segment {
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    top: 50%;
-    left: 50%;
-    transform-origin: left center;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  }
-  
-  .letter {
-    position: absolute;
-    font-size: 1.25rem;
-    font-weight: bold;
-    transform: translate(-50%, -50%) rotate(-13.85deg);
-    left: 85%;
-    top: 50%;
-    color: white;
-  }
-  
-  .wheel-center {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background: black;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(1440deg); /* Adjust for multiple spins */
-    }
-  }
-  
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
